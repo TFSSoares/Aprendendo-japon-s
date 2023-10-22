@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registro</title>
+    <link rel="stylesheet" href="../pref.css">
+    <script src="../pref.js"></script>
+    <style>
+      input{
+        width: 20rem;
+      }
+    </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">Home</a>
+        <a href="hiragana.html">Hiragana</a>
+        <a href="katakana.html">Katakana</a>
+        <a href="kanji.html">Kanji</a>
+        <a href="prathiragana.html" > Praticar Hiragana </a>
+        <a href="pratkatakana.html" > Praticar Katakana </a>
+        <a href="pratkanji.html"> Praticar Kanji</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+
+      <h1> Cadastro</h1>
+
+      <nav id="login" style="margin-top: 10rem;">
+        <aside id="text-4" class="widget widget_text">			
+           
+          <div class="box-titulo">
+            <div>
+              Fazer login
+            </div> 
+            
+          </div>
+          <div class="box">
+            <form name="formulario" method="post" action="/action_page.php">
+              
+                  
+               <label  for="username">Nome do Usuário ou<br> Email</label>
+                
+               <input style="width: fit-content;" type="text"  id="username"  name="username" >
+                 
+               <label for="pass">Senha</label>
+              
+               <input style="width: fit-content;" type="password"  id="pass" name="pass">    
+              <div>
+                <span> Lembrar</span>
+                <input style="width: auto;" type="checkbox" name="rememberme" value="checked='checked'">
+              </div> 
+              <input style="width: fit-content;" type="submit"  name="login" value="Login">  
+                  
+               <a id="forgot_pass"  href="resetsenha.html">Esqueceu a Senha?</a>       
+                  
+               <a id="register"  href="registro.html">Junte-se a Nós!</a>
+              
+            </form>    
+          </div>         
+        </aside>
+      </nav>      
+    <div style="margin-top: -35rem;">
+      <main id="page">
+      
+      <form id="login" name="login" method="post" action="">
+        <label for="usuname">Nome de Usuário:</label> 
+        <input type="text" id="usuname" name="usename">
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" >
+        <label for="sen"> Senha:</label>
+        <input type="password" id="sen" name="senh">
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Sobrenome:</label>
+        <input type="text" id="lname" name="lname" >
+        
+
+        <br><input type="submit" value="Enviar" style="width: 150px;">
+      </form>
+    <main>
+    <br><br>
+    </div>
+    
+  
+  
+    
+    
+
+
+
+
+
+
+
+</body>
+</html>

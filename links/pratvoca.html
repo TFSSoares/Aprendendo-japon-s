@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単語練習</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="game3.css">
+    <script src="wana.js"></script>
+
+
+   
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" >Home</a>
+        <a href="hiragana.html">Hiragana</a>
+        <a href="katakana.html">Katakana</a>
+        <a href="kanji.html">Kanji</a>
+        <a href="prathiragana.html" > Praticar Hiragana </a>
+        <a href="pratkatakana.html" > Praticar Katakana </a>
+        <a href="pratkanji.html"> Praticar Kanji</a>
+        <a href="pratvoca.html" class="active"> Praticar Vocabulário</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="container">
+        <div id="game" class="justfy-center flex-column"> 
+            <div id="hud">
+                <div id="hudItem">
+                    <p id="progressText" class="hud-prefix">
+                        Questão
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull">
+
+                        </div>
+                    </div>
+                </div>
+                <div id="hudItem">
+                    <p class="hud-prefix">
+                        Pontuação
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h2 id="question"></h2>
+            <h3 id="h3"></h3>
+            <div class="choice-container">
+                <input onkeyup="handle(event)" id="main-text-input" type="text" maxlength="30"  spellcheck="false" lang="ja">
+            </div>
+      </div>
+   
+      <script src="game3.js"></script>
+      
+      
+</body>
+</html>
